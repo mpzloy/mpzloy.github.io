@@ -23,7 +23,7 @@ body a {
 .clearfix:after {
   content: "";
   display: block;
-  clear: both
+  clear: both;
 }
 
 .wrapper {
@@ -43,16 +43,19 @@ header {
       .fa-facebook, .fa-vk, .fa-twitter {
         color: @grey-color;
       }
-      .fa-facebook{
+      .fa-facebook {
         margin-top: 8px;
         margin-right: 12px;
+        font-size: 21px;
       }
-      .fa-vk{
+      .fa-vk {
         margin-top: 14px;
         margin-right: 10px;
+        font-size: 16px;
       }
-      .fa-twitter{
+      .fa-twitter {
         margin-top: 12px;
+        font-size: 16px;
       }
     }
 
@@ -73,9 +76,24 @@ header {
   }
 
   .header-midle-line {
+    min-height: 94px;
     .logo-block {
+      display: inline-block;
+
+      .logo {
+        max-height: 64px;
+        margin-top: 17px;
+        margin-bottom: 13px;
+        margin-left: 53px;
+        margin-right: 7px;
+        vertical-align: middle
+      }
+
       .text-logo {
         display: inline-block;
+        vertical-align: middle;
+        max-height: 31px;
+
         .site-name {
           text-transform: uppercase;
           font-size: 24px;
@@ -90,14 +108,18 @@ header {
     }
 
     .search-block {
+      margin-left: 136px;
+      display: inline-block;
       vertical-align: middle;
+
       input {
         color: @grey-color;
         border: none;
         height: 37px;
         width: 300px;
-        background-color: @light-grey;
+        background-color: #f2f2f2;
         text-transform: uppercase;
+        padding-left: 15px;
       }
 
       .button-search {
@@ -109,20 +131,47 @@ header {
         text-align: center;
         vertical-align: middle;
         border: none;
+        margin-left: -4px;
+        margin-top: -3px;
       }
+
       #search-icon {
         vertical-align: middle;
       }
     }
 
     .products-in-cart {
-      .cart {
-        text-transform: uppercase;
-        font-family: Verdana, Geneva, sans-serif;
-        font-size: 14px;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: 500;
+      display: inline-block;
+      float: right;
+      margin-top: 30px;
+
+      svg {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .p-cart {
+        display: inline-block;
+        margin-right: 83px;
+        margin-left: 20px;
+        vertical-align: middle;
+        line-height: 1;
+
+        .cart {
+          text-transform: uppercase;
+          font-family: Verdana, Geneva, sans-serif;
+          font-size: 14px;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: 700;
+        }
+
+        .in-cart {
+          font-family: Verdana, Geneva, sans-serif;
+          font-size: 14px;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: 700;
+        }
       }
     }
   }
@@ -133,19 +182,32 @@ nav {
 
   .menu {
     height: 47px;
-    display: inline-block;
+    margin: 0 auto;
+    vertical-align: middle;
+
+    div:last-child {
+      border-right: none;
+    }
 
     .menu-items {
-      display: inline-block;
       text-transform: uppercase;
       font-size: 18px;
       border-right: 1px solid @white-color;
+      width: 337px;
+      height: 40px;
+      text-align: center;
+      display: inline-block;
+      margin-top: 3px;
+      vertical-align: middle;
+      padding-top: 10px; //наколхозил
 
       a {
         color: @white-color;
+        display: block;
+        height: 100%;
+        vertical-align: middle;
       }
     }
-
   }
 }
 
@@ -155,7 +217,8 @@ nav {
 }
 
 section {
-
+  margin-left: 2px;
+  margin-right: 2px;
   .actions {
     min-height: 158px;
     min-width: 378px;
@@ -164,64 +227,99 @@ section {
     vertical-align: middle;
     color: @white-color;
     display: inline-block;
-    margin: 0 auto;
+    margin: auto 33px;
 
     h1 {
       font-size: 28px;
+      margin-top: 21px;
+      margin-bottom: 7px;
     }
 
     p {
       text-align: inherit;
       font-size: 14px;
+      margin-bottom: 10px;
     }
     a {
       font-size: 20px;
       color: inherit;
       text-decoration: underline;
+      margin-bottom: 30px;
     }
   }
 }
 
 main {
+  margin-top: 14px;
+
   .products {
     width: 290px;
     height: 337px;
     display: inline-block;
+    margin-top: 13px;
+    margin-left: 34px;
+    margin-bottom: 13px;
 
     .product-prev {
+      border: @border;
       display: inline-block;
+      width: 245px;
+      height: 337px;
 
       .product-img {
-        max-width: 215px;
+        width: 215px;
+        height: 215px;
+        margin: 10px 15px 13px;
+
+        img {
+          max-width: 215px;
+          margin-top: 15%;
+        }
       }
 
       .product-name {
         font-size: 18px;
         color: @grey-color;
         display: inline-block;
+        margin-left: 15px;
+        margin-bottom: 6px;
+        font-weight: 700;
       }
       .product-name-info {
         font-size: 12px;
         color: @grey-color;
         display: inline-block;
+        margin-left: 15px;
+        width: 178px;
       }
       .product-price {
         color: @red-color;
         display: inline-block;
         font-size: 20px;
+        margin-left: 15px;
       }
     }
     .basket-info {
       display: inline-block;
       float: right;
       .basket {
-
+        border: @border;
+        width: 44px;
+        height: 44px;
+        margin-bottom: 1px;
+        svg {
+          margin-top: 8px;
+          margin-left: 6px;
+        }
       }
 
       .info {
-
-        .info-img {
-
+        border: @border;
+        width: 44px;
+        height: 44px;
+        svg {
+          margin-top: 12px;
+          margin-left: 18px;
         }
       }
     }
@@ -230,38 +328,109 @@ main {
 
 footer {
   background-color: #1e1e1e;
+  margin-top: 18px;
+  height: 364px;
   .footer-menu {
-    li, a{
+    margin-left: 51px;
+    ul {
+      margin-top: 50px;
+    }
+
+    li a {
       color: @white-color;
+      font-size: 16px;
+      line-height: 36px;
     }
 
-    li:first-child {
-      text-transform: uppercase;
-      font-size: 22px;
-
-    }
     .f-menu {
       display: inline-block;
+      margin-top: 20px;
+      width: 24%;
+      height: 32  4px;
+
+      span {
+        text-transform: uppercase;
+        font-size: 22px;
+        a {
+          color: @white-color;
+        }
+
+      }
 
     }
     .f-catalog {
       display: inline-block;
+      margin-top: 20px;
+      width: 24%;
+      height: 300px;
+
+      span {
+        text-transform: uppercase;
+        color: @white-color;
+        font-size: 22px;
+        a {
+          color: @white-color;
+        }
+
+      }
 
     }
     .f-blog {
       display: inline-block;
+      margin-top: 20px;
+      width: 24%;
+      height: 300px;
+
+      span {
+        text-transform: uppercase;
+        color: @white-color;
+        font-size: 22px;
+        a {
+          color: @white-color;
+        }
+      }
 
     }
     .f-contacts {
       display: inline-block;
-      .ico{
-        display: inline-block;
+      width: 24%;
+      margin-top: 20px;
+
+      .fa {
+        margin-right: 44px;
+      }
+      .fa-facebook {
+        font-size: 58px;
+      }
+      .fa-vk {
+        font-size: 31px;
+      }
+      .fa-twitter {
+        font-size: 41px;
       }
 
+      span {
+        text-transform: uppercase;
+        color: @white-color;
+        font-size: 22px;
+
+        a {
+          color: @white-color;
+        }
+      }
+
+      .phone {
+        font-size: 28px;
+        color: @white-color;
+        margin-top: 19px;
+      }
+      .ico {
+        display: inline-block;
+      }
     }
 
   }
-  .footer-copy{
+  .footer-copy {
     text-align: center;
     font-size: 10px;
     color: @white-color;
