@@ -1,0 +1,9 @@
+1. Установить node.js 
+2. npm i -g gulp-cli 
+3. npm list -g --depth=0 
+4. cd /d E:/html-test
+5. кладём в папку html-test package.json и gulpfile.js 
+6. npm up 
+7. настроить папки и файлы в gulpfile 
+
+MACC LINUX: sudo npm i -g gulp-cli 
