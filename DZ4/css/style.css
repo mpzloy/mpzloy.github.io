@@ -301,6 +301,11 @@ body a {
 .article .article__items:last-child {
   margin-left: 15px;
 }
+.products {
+  width: 384px;
+  height: 150px;
+  background-color: #ffed00;
+}
 @media screen and (max-width: 820px) {
   .firstline-header {
     -webkit-box-pack: end;
