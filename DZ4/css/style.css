@@ -12,9 +12,9 @@ body a {
   text-decoration: none;
   color: inherit;
 }
-body div {
+/*body div {
   border: 1px solid #000;
-}
+}*/
 .wrapper {
   max-width: 1270px;
   margin: 0 auto;
