@@ -12,6 +12,9 @@ body a {
   text-decoration: none;
   color: inherit;
 }
+body div {
+  border: 1px solid #000;
+}
 .wrapper {
   max-width: 1270px;
   margin: 0 auto;
@@ -222,9 +225,57 @@ body a {
   background: #ffed00 -webkit-repeating-linear-gradient(135deg, #ffed00, #ffed00 10px, #4c4c4c 10px, #4c4c4c 20px) fixed;
   background: #ffed00 repeating-linear-gradient(-45deg, #ffed00, #ffed00 10px, #4c4c4c 10px, #4c4c4c 20px) fixed;
 }
+.carusel {
+  background-color: #fff;
+  max-width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.carusel .carusel__banner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.carusel .carusel__banner-img {
+  max-width: 500px;
+  min-height: 345px;
+  position: relative;
+  overflow: hidden;
+}
+.carusel .carusel__banner-img img {
+  max-width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
 .wrapper_contents {
   max-width: 1270px;
-  height: 1500px;
   margin: 0 auto;
   background: url(../img/bg.jpg) no-repeat top;
   padding-top: 24px;
@@ -302,9 +353,22 @@ body a {
   margin-left: 15px;
 }
 .products {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.products .product-cart {
   width: 384px;
-  height: 150px;
-  background-color: #ffed00;
+  height: 250px;
+  border: 1px solid #ddd;
 }
 @media screen and (max-width: 820px) {
   .firstline-header {
