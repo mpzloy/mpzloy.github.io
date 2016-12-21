@@ -6,8 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://use.fontawesome.com/7bf248ad25.js"></script>
+    <script src="libs/jquery-3.1.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>DZ4</title>
@@ -60,27 +64,65 @@
 
     <div class="gradient">
     </div>
+    <!--banner-->
+    <script>$(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                }
+            }
+        })
+    });</script>
 
-    <div class="carusel">
-        <div class="carusel__arrow-l"><i class="fa fa-angle-left"></i></div>
-        <div class="carusel__banner">
-            <div class="carusel__banner-img">
-                <img src="img/img_banner.jpg" alt="Clean carbon K1">
+    <div class="owl-carousel">
+        <div class="carusel">
+            <div class="carusel__arrow-l"><i class="fa fa-angle-left"></i></div>
+            <div class="carusel__banner">
+                <div class="carusel__banner-img">
+                    <img src="img/img_banner.jpg" alt="Clean carbon K1">
+                </div>
+                <div class="carusel__banner-text">
+                    <h1>
+                        Clean carbon K1
+                    </h1>
+                    <h2>
+                        New ultra light frame
+                    </h2>
+                    <p>
+                        Мы рады представить Вам новую высоко технологичную модель Clean K1, первая ...
+                    </p>
+                    <a href="#">Подробнее</a>
+                </div>
             </div>
-            <div class="carusel__banner-text">
-                <h1>
-                    Clean carbon K1
-                </h1>
-                <h2>
-                    New ultra light frame
-                </h2>
-                <p>
-                    Мы рады представить Вам новую высоко технологичную модель Clean K1, первая ...
-                </p>
-                <a href="#">Подробнее</a>
-            </div>
+            <div class="carusel__arrow-r"><i class="fa fa-angle-right"></i></div>
         </div>
-        <div class="carusel__arrow-r"><i class="fa fa-angle-right"></i></div>
+
+        <div class="carusel">
+            <div class="carusel__arrow-l"><i class="fa fa-angle-left"></i></div>
+            <div class="carusel__banner">
+                <div class="carusel__banner-img">
+                    <img src="img/img_banner.jpg" alt="Clean carbon K1">
+                </div>
+                <div class="carusel__banner-text">
+                    <h1>
+                        Clean carbon K1
+                    </h1>
+                    <h2>
+                        New ultra light frame
+                    </h2>
+                    <p>
+                        Мы рады представить Вам новую высоко технологичную модель Clean K1, первая ...
+                    </p>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+            <div class="carusel__arrow-r"><i class="fa fa-angle-right"></i></div>
+        </div>
+
     </div>
 
     <div class="wrapper_contents">
