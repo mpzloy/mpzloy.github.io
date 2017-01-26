@@ -1,0 +1,8 @@
+:root {
+  --bg-color: #00ffa4;
+  --color-theme: {
+    background-color: #990031;
+    color: white;
+    border: 1px solid green;
+  };
+}
