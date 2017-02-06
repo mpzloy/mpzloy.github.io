@@ -1,0 +1,242 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  div {
+    margin: 5px;
+  }
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+
+  .block--wrapper {
+    display: flex;
+    max-width: 900px;
+  }
+
+  .block {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    text-align: left;
+
+    h2 {
+      color: #666;
+      font-size: 25px;
+    }
+
+    .block--img {
+      display: flex;
+      max-width: 200px;
+      align-items: center;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .block--work_time {
+      text-align: left;
+      font-size: 16px;
+      width: 60%;
+    }
+
+    .block--phone {
+      display: flex;
+      align-items: center;
+      color: #666;
+      max-width: 400px;
+
+      img {
+        width: 24px;
+        margin-right: 10px;
+      }
+      span {
+        font-size: 26px;
+      }
+
+      .phone-call {
+        fill: #ccc;
+        width: 26px;
+        margin: 5px;
+      }
+
+      .phone-call:hover {
+        fill: #f80;
+      }
+
+      .phone {
+        fill: #ccc;
+        width: 28px;
+        margin: 5px;
+      }
+
+      .phone:hover {
+        fill: #f80;
+      }
+
+      .mts {
+        fill: #ccc;
+        width: 24px;
+        margin: 5px;
+      }
+
+      .mts:hover {
+        fill: #f00;
+      }
+
+      .kievstar {
+        fill: #ccc;
+        width: 26px;
+        margin: 5px;
+      }
+
+      .kievstar:hover {
+        fill: #109dff;
+      }
+
+      .life {
+        fill: #ccc;
+        width: 24px;
+        margin: 5px;
+      }
+
+      .life:hover {
+        fill: #f00;
+      }
+    }
+
+    .block--phone:hover .kievstar {
+      fill: #109dff;
+    }
+
+    .block--phone:hover .life {
+      fill: #f00;
+    }
+
+    .block--phone:hover .mts {
+      fill: #f00;
+    }
+
+    .block--phone:hover .phone {
+      fill: #f80;
+    }
+
+    .block--phone:hover .phone-call {
+      fill: #f80;
+    }
+
+    .block--mail {
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+      margin-right: 10px;
+
+      p {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+
+        span {
+          margin: 0 30px;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .reserve {
+    min-height: 1px;
+    color: #f00;
+  }
+}
+
+.map {
+  display: flex;
+  justify-content: space-between;
+
+  .map--view {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    text-align: left;
+
+    span {
+      font-size: 24px;
+      color: #777;
+      margin-bottom: 12px;
+    }
+
+    iframe {
+      width: 100%;
+      min-height: 450px;
+      border: none;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .contacts {
+    flex-direction: column;
+    align-items: center;
+
+    .block {
+      width: 100%;
+      align-items: center;
+
+      h2 {
+        text-align: center;
+      }
+    }
+
+    .second {
+      order: 3;
+    }
+
+    .third {
+      order: 2;
+    }
+
+    .fourth {
+      order: 4;
+    }
+
+    .reserve {
+      order: 2;
+    }
+
+  }
+
+  .map {
+    flex-direction: column;
+    align-items: center;
+
+    .map--view {
+      text-align: center;
+      width: 98%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .second {
+    .block--wrapper {
+      flex-direction: column;
+    }
+  }
+
+  .block--mail {
+    p {
+      flex-direction: column;
+      margin: 5px 0;
+      align-items: center;
+
+      span {
+        margin: 0;
+      }
+    }
+  }
+}
+
