@@ -12,3 +12,9 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+h1 {
+  color: white;
+  font-size: 3em;
+  text-align: center;
+}
