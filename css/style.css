@@ -1,35 +1,14 @@
+* {
+  box-sizing: border-box;
+}
 
-body {
-  margin: 0 auto;
-  padding: 0;
+main {
   background-image: url("../img/5_.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
-}
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.wrapper {
-  max-width: 1366px;
-  margin: 0 auto;
-  padding: 0;
-  overflow: hidden;
-}
-.first{
-  box-sizing: border-box;
-  min-height: 300px;
-  background-color: rgba(255, 255, 255, 0.6);
-}
-p{
-  margin: 20px auto;
-  font-weight: bold;
-  font-size: 40px;
-  color: #000;
-  text-align: center;
-  border: 5px solid #000;
-  min-height: 100px;
-  padding-top: 5%;
-  text-transform: uppercase;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
